@@ -1,0 +1,44 @@
+export const wardsGrid = [
+  
+  {
+    field: 'WardName',
+    headerText: 'Ward Name',
+    width: '150',
+    editType: 'dropdownedit',
+    textAlign: 'Center',
+  },
+  { field: 'NumberOfShitfs',
+    headerText: 'Number of shitfs',
+    width: '150',
+    textAlign: 'Center',
+  },
+  {
+    field: 'NumberOfBeds',
+    headerText: 'Number of beds',
+    format: 'C2',
+    textAlign: 'Center',
+    editType: 'numericedit',
+    width: '150',
+  },
+  {
+    field: 'ConsultantID',
+    headerText: 'Consultant ID',
+    format: 'C2',
+    textAlign: 'Center',
+    editType: 'numericedit',
+    width: '150',
+  },
+  {
+    field: 'WardID',
+    headerText: 'Ward ID',
+    width: '120',
+    textAlign: 'Center',
+  },
+
+  {
+    field: 'DailyScheduleID',
+    headerText: 'Daily Schedule ID',
+    width: '150',
+    textAlign: 'Center',
+  },
+];

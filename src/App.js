@@ -8,6 +8,9 @@ import { Overview, Wards, Calendar, Doctors, Consultants } from './pages';
 import './App.css';
 
 import { useStateContext } from './contexts/ContextProvider';
+
+import Login from './pages/Login'
+import Register from './pages/Register'
    
 const App = () => {
   const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
@@ -71,7 +74,8 @@ const App = () => {
                 <Route path="/consultants" element={< Consultants />} />
                 <Route path="/doctors" element={<Doctors />} />
                 <Route path="/calendar" element={<Calendar />} />
-
+                <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
                
               </Routes>
             </div>
