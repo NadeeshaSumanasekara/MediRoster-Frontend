@@ -3,5 +3,5 @@ export { default as Wards } from './Wards';
 export { default as Consultants } from './Consultants';
 export { default as Doctors } from './Doctors'; 
 export { default as Calendar } from './Calendar';
- 
+export { default as LeaveRequests } from './LeaveRequests'; 
 

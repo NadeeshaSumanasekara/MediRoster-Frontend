@@ -4,7 +4,7 @@ import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
-import { Overview, Wards, Calendar, Doctors, Consultants } from './pages';
+import { Overview, Wards, Calendar, Doctors, Consultants, LeaveRequests } from './pages';
 import './App.css';
 
 import { useStateContext } from './contexts/ContextProvider';
