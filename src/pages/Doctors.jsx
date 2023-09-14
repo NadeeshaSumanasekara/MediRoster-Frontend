@@ -5,22 +5,31 @@ import { doctorsData, doctorsGrid } from '../data/dummy';
 import { Header } from '../components';
 
 const Doctors = () => {
-  const selectionsettings = { persistSelection: true };
-  const toolbarOptions = ['Delete'];
+  const selectionsettings = { persistSelection: true }; 
   const editing = { allowDeleting: true, allowEditing: true };
+
+  const handleCalendar = () => {
+    window.location.href = '/calendar';  
+  };
 
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
-      <Header category="Page" title="Doctors" />
+      <div style={{display:"flex", justifyContent:"space-between"}}>
+        <Header title="Doctors" />
+
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full h-12 w-full sm:w-auto">
+          Add Doctor
+        </button>
+      </div>
       <GridComponent
         dataSource={doctorsData}
         enableHover={false}
         allowPaging
         pageSettings={{ pageCount: 5 }}
-        selectionSettings={selectionsettings}
-        toolbar={toolbarOptions}
+        selectionSettings={selectionsettings} 
         editSettings={editing}
         allowSorting
+        onClick={handleCalendar}
       >
         <ColumnsDirective>
           {/* eslint-disable-next-line react/jsx-props-no-spreading */}
