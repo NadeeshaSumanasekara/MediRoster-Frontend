@@ -9,4 +9,7 @@ export { default as UserProfile } from './UserProfile';
 export { default as ChartsHeader } from './ChartsHeader';
 export { default as Header } from './Header';
 export { default as Cart } from './Cart';
-
+export { default as SparkLine } from './SaprkLine';
+export { default as LineChart } from './LineChart';
+export { default as Pie } from './Pie';
+export { default as Stacked } from './Stacked';

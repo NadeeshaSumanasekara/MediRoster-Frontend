@@ -14,7 +14,13 @@ const Doctors = () => {
 
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
-      <Header  title="Doctors" />
+      <div style={{display:"flex", justifyContent:"space-between"}}>
+        <Header title="Doctors" />
+
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full h-12 w-full sm:w-auto">
+          Add Doctor
+        </button>
+      </div>
       <GridComponent
         dataSource={doctorsData}
         enableHover={false}
