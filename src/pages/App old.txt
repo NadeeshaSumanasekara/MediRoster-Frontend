@@ -89,3 +89,39 @@ const App = () => {
 };
 
 export default App;
+import React, { useState } from 'react';
+import Login from './pages/Login';
+import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
+import AdminUser from './AdminUser';
+import ConsultantUser from './ConsultantUser';
+import DoctorUser from './DoctorUser';
+import Admin from './AdminUser';
+
+function App() {
+  // Use state to determine whether to show the login page or the main app page.
+  const [loggedIn, setLoggedIn] = useState(true);
+
+  // Function to handle the login action and switch to the main app page.
+  const handleLogin = () => {
+    setLoggedIn(true);
+  };
+
+  return (
+    <div>
+      {/* Conditionally render the login page or the main app page based on the 'loggedIn' state. */}
+      {loggedIn ? (
+        <Login />
+      ) : (
+        <Login onLogin={handleLogin} />
+      )}
+       <BrowserRouter>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path= "/adminoverview" element = {<Admin/>}/>
+      </Routes>
+    </BrowserRouter>
+    </div>
+  );
+}
+
+export default App;

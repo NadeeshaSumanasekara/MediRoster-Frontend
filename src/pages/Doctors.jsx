@@ -3,21 +3,27 @@ import { GridComponent, ColumnsDirective, ColumnDirective, Page, Selection, Inje
 
 import { doctorsData, doctorsGrid } from '../data/dummy';
 import { Header } from '../components';
+import { useNavigate } from 'react-router-dom';
+import Register from '../pages/Register'
 
 const Doctors = () => {
   const selectionsettings = { persistSelection: true }; 
   const editing = { allowDeleting: true, allowEditing: true };
-
+  const navigate = useNavigate();
   const handleCalendar = () => {
-    window.location.href = '/calendar';  
+    navigate('/calendar');   
   };
 
+  const addDoctor = () => {
+    navigate('/Register');   
+  };
+  
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
       <div style={{display:"flex", justifyContent:"space-between"}}>
         <Header title="Doctors" />
 
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full h-12 w-full sm:w-auto">
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full h-12 w-full sm:w-auto" onClick={addDoctor}>
           Add Doctor
         </button>
       </div>

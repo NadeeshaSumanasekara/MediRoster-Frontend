@@ -18,8 +18,7 @@ const AdminOverview = () => {
   const { currentColor, currentMode } = useStateContext();
 
   return (
-    <div className="mt-24">  
-    <div >this is the admin overview</div>   
+    <div className="mt-24">     
       <div className="flex gap-10 m-4 flex-wrap justify-center">
         <div className="md:w-400 bg-white dark:text-gray-200 dark:bg-secondary-dark-bg rounded-2xl p-6 m-3">
           <div className="flex justify-between">

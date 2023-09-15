@@ -3,13 +3,14 @@ import { GridComponent, ColumnsDirective, ColumnDirective, Page, Selection, Inje
 
 import { consultantsData, consultantsGrid } from '../data/dummy';
 import { Header } from '../components';
+import { useNavigate } from 'react-router-dom';
 
 const Consultants = () => {
   const selectionsettings = { persistSelection: true }; 
   const editing = { allowDeleting: true, allowEditing: true };
-
+  const navigate = useNavigate();
   const handleCalendar = () => {
-    window.location.href = '/calendar';  
+    navigate('/calendar');   
   };
   
   return (

@@ -450,6 +450,87 @@ export const employeesGrid = [
     textAlign: 'Center' },
 ];
 
+export const Doctorlinks = [
+  {
+    
+    links: [
+      {
+        name: 'overview',
+        icon: <FiShoppingBag />,
+      },
+      // {
+      //   name: 'orders',
+      //   icon: <AiOutlineShoppingCart />,
+      // },
+      {
+        name: 'wards',
+        icon: <AiOutlineShoppingCart />,
+      },
+      // {
+      //   name: 'employees',
+      //   icon: <IoMdContacts />,
+      // },
+      {
+        name: 'consultants',
+        icon: <RiContactsLine />,
+      },
+      {
+        name: 'doctors',
+        icon: <RiContactsLine />,
+      },
+      // {
+      //   name: 'calendar',
+      //   icon: <AiOutlineCalendar />,
+      // },
+      // {
+      //   name: 'kanban',
+      //   icon: <BsKanban />,
+      // },
+      // {
+      //   name: 'editor',
+      //   icon: <FiEdit />,
+      // },
+      // {
+      //   name: 'color-picker',
+      //   icon: <BiColorFill />,
+      // },
+      // {
+      //   name: 'line',
+      //   icon: <AiOutlineStock />,
+      // },
+      // {
+      //   name: 'area',
+      //   icon: <AiOutlineAreaChart />,
+      // },
+
+      // {
+      //   name: 'bar',
+      //   icon: <AiOutlineBarChart />,
+      // },
+      // {
+      //   name: 'pie',
+      //   icon: <FiPieChart />,
+      // },
+      // {
+      //   name: 'financial',
+      //   icon: <RiStockLine />,
+      // },
+      // {
+      //   name: 'color-mapping',
+      //   icon: <BsBarChart />,
+      // },
+      // {
+      //   name: 'pyramid',
+      //   icon: <GiLouvrePyramid />,
+      // },
+      // {
+      //   name: 'stacked',
+      //   icon: <AiOutlineBarChart />,
+      // },
+    ],
+  },
+];
+
 export const links = [
   {
     
